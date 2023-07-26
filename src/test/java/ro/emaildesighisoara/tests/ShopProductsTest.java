@@ -31,7 +31,7 @@ public class ShopProductsTest extends BaseTest{
         waitForNumberOfSeconds(1);
         shopProductsPage.clickAddToCart();
         waitForNumberOfSeconds(3);
-        shopProductsPage.clickshoppingCartElement();
+        shopProductsPage.clickShoppingCartElement();
 
 
         CartPage cartPage = new CartPage(driver);

@@ -9,7 +9,7 @@ public class CustomerAccountPage extends BasePage {
 
     public CustomerAccountPage(WebDriver driver) {
         super(driver);}
-        @FindBy(className = "title") private WebElement browsingTheAccount;
+        @FindBy(xpath = "//div[@class='block account-nav']//h3") private WebElement browsingTheAccount;
 
         public boolean checkIsBrowsingTheAccountIsPresent(){return browsingTheAccount.isDisplayed();}
 

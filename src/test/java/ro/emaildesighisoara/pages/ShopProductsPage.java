@@ -34,8 +34,7 @@ public class ShopProductsPage extends BasePage{
     public void clickPinkButton(){pinkButton.click();}
     public void clickAdditionButton(){additionButton.click();}
     public void clickAddToCart(){addToCart.click();}
-
-    public void clickshoppingCartElement(){shoppingCartElement.click();}
+    public void clickShoppingCartElement(){shoppingCartElement.click();}
 
 
 
