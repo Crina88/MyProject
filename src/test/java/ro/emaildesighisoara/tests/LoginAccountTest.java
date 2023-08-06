@@ -19,11 +19,11 @@ public class LoginAccountTest extends BaseTest{
         createAccountPage.clickMyAccountButton();
         waitForNumberOfSeconds(1);
         createAccountPage.enterEmail("divirician_crina@yahoo.com");
-        createAccountPage.enterPassword("Cr198813!");
+        createAccountPage.enterPassword("Cr198812!");
         createAccountPage.clickConnectButton();
 
         CustomerAccountPage customerAccountPage = new CustomerAccountPage(driver);
-        Assert.assertTrue(customerAccountPage.checkIsBrowsingTheAccountIsPresent());
+        Assert.assertTrue(customerAccountPage.checkIfAccountPageIsDisplayed());
     }
 }
 

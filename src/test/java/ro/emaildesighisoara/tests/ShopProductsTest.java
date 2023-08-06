@@ -36,12 +36,12 @@ public class ShopProductsTest extends BaseTest{
 
         CartPage cartPage = new CartPage(driver);
         waitForNumberOfSeconds(3);
-        Assert.assertTrue(cartPage.checkIsClassicEnameledBowlIsPresent());
-        Assert.assertTrue(cartPage.checkIsPistachioGreenColorIsPresent());
-        Assert.assertTrue(cartPage.checkIsOnePieceIsPresent());
-        Assert.assertTrue(cartPage.checkIsopalPinkColorIsPresent());
-        Assert.assertTrue(cartPage.checkIsTwoPieces());
-        Assert.assertTrue(cartPage.checkIsDeepEnameledBowlIsPresent());
+        Assert.assertTrue(cartPage.checkIfClassicEnameledBowlIsDisplayed());
+        Assert.assertTrue(cartPage.checkIfPistachioGreenColorIsDisplayed());
+        Assert.assertTrue(cartPage.checkIfOnePieceIsDisplayed());
+        Assert.assertTrue(cartPage.checkIfDeepEnameledBowlIsDisplayed());
+        Assert.assertTrue(cartPage.checkIfOpalPinkColorIsDisplayed());
+        Assert.assertTrue(cartPage.checkIfTwoPiecesIsDisplayed());
 
     }
 

@@ -24,27 +24,27 @@ public class CartPage extends BasePage {
     private WebElement twoPieces;
 
 
-    public boolean checkIsClassicEnameledBowlIsPresent() {
+    public boolean checkIfClassicEnameledBowlIsDisplayed() {
         return classicEnameledBowl.isDisplayed();
     }
 
-    public boolean checkIsPistachioGreenColorIsPresent() {
+    public boolean checkIfPistachioGreenColorIsDisplayed() {
         return pistachioGreenColor.isDisplayed();
     }
 
-    public boolean checkIsOnePieceIsPresent() {
+    public boolean checkIfOnePieceIsDisplayed() {
         return onePiece.isDisplayed();
     }
 
-    public boolean checkIsDeepEnameledBowlIsPresent() {
+    public boolean checkIfDeepEnameledBowlIsDisplayed() {
         return deepEnameledBowl.isDisplayed();
     }
 
-    public boolean checkIsopalPinkColorIsPresent() {
+    public boolean checkIfOpalPinkColorIsDisplayed() {
         return opalPinkColor.isDisplayed();
     }
 
-    public boolean checkIsTwoPieces() {
+    public boolean checkIfTwoPiecesIsDisplayed() {
         return twoPieces.isDisplayed();
     }
 }

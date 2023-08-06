@@ -27,11 +27,11 @@ public class FiltersTest extends BaseTest{
 
 
 
-        Assert.assertTrue(filtersPage.checkIsLiterEnamelSaucepanIsPresent());
+        Assert.assertTrue(filtersPage.checkIfLiterEnamelSaucepanIsDisplayed());
         waitForNumberOfSeconds(2);
-        Assert.assertTrue(filtersPage.checkIsGreyColorSelectIsSelected());
+        Assert.assertTrue(filtersPage.checkIfGreyColorSelectIsSelected());
         filtersPage.clickLiterEnamelSaucepan();
-        Assert.assertTrue(filtersPage.checkIsTechnicalDetailsIsPresent());
+        Assert.assertTrue(filtersPage.checkIfTechnicalDetailsIsDisplayed());
         Assert.assertEquals(filtersPage.getPotCapacity(), 2, "Pot capacity is not as expected");
         Assert.assertEquals(filtersPage.getPotDiameter(),200,"Pot diameter is not as expected");
         Assert.assertEquals(filtersPage.getPotHigh(),74,"Pot high is not as expected");

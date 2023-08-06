@@ -29,9 +29,9 @@ public class FiltersPage extends BasePage{
     public void clickSeventyFourHigh(){seventyFourHigh.click();}
     public void clickgreyColor(){greyColor.click();}
     public void clickLiterEnamelSaucepan(){literEnamelSaucepan.click();}
-    public boolean checkIsLiterEnamelSaucepanIsPresent(){return literEnamelSaucepan.isDisplayed();}
-    public boolean checkIsGreyColorSelectIsSelected(){return greyColorSelect.isDisplayed();}
-    public boolean checkIsTechnicalDetailsIsPresent(){return technicalDetails.isDisplayed();}
+    public boolean checkIfLiterEnamelSaucepanIsDisplayed(){return literEnamelSaucepan.isDisplayed();}
+    public boolean checkIfGreyColorSelectIsSelected(){return greyColorSelect.isDisplayed();}
+    public boolean checkIfTechnicalDetailsIsDisplayed(){return technicalDetails.isDisplayed();}
     public int getPotCapacity(){ return Integer.valueOf(potCapacity.getText());}
     public int getPotDiameter(){return Integer.valueOf(potDiameter.getText());}
     public int getPotHigh(){return Integer.valueOf(potHigh.getText());}

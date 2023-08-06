@@ -11,6 +11,6 @@ public class CustomerAccountPage extends BasePage {
         super(driver);}
         @FindBy(xpath = "//div[@class='block account-nav']//h3") private WebElement browsingTheAccount;
 
-        public boolean checkIsBrowsingTheAccountIsPresent(){return browsingTheAccount.isDisplayed();}
+        public boolean checkIfAccountPageIsDisplayed(){return browsingTheAccount.isDisplayed();}
 
     }
