@@ -12,8 +12,8 @@ public class CartPage extends BasePage {
 
     @FindBy(xpath = "//strong[@class= 'product-item-name']/a[contains(@href, '/bol-clasic') and not(@data-bind)]")
     private WebElement classicEnameledBowl;
-    @FindBy(xpath = "//dl[@class='item-options']//dd[text()=' Verde fistic ']")
-    private WebElement pistachioGreenColor;
+    @FindBy(xpath = "//dl[@class='item-options']//dd[contains(text(), ' Crem caramel')]")
+    private WebElement creamCaramelColor;
     @FindBy(xpath = "//div[@class='control qty']//input")
     private WebElement onePiece;
     @FindBy(xpath = "//strong[@class= 'product-item-name']/a[contains(@href, '/bol-adanc') and not(@data-bind)]")
@@ -28,8 +28,8 @@ public class CartPage extends BasePage {
         return classicEnameledBowl.isDisplayed();
     }
 
-    public boolean checkIfPistachioGreenColorIsDisplayed() {
-        return pistachioGreenColor.isDisplayed();
+    public boolean checkIfCreamCaramelColorIsDisplayed() {
+        return creamCaramelColor.isDisplayed();
     }
 
     public boolean checkIfOnePieceIsDisplayed() {

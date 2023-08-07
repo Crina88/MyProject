@@ -16,6 +16,7 @@ public class LoginAccountTest extends BaseTest{
         createAccountPage.clickShopBuy();
         waitForNumberOfSeconds(2);
         createAccountPage.clickMenuButton();
+        waitForNumberOfSeconds(1);
         createAccountPage.clickMyAccountButton();
         waitForNumberOfSeconds(1);
         createAccountPage.enterEmail("divirician_crina@yahoo.com");

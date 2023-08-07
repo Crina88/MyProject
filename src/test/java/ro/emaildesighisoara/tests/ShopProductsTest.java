@@ -17,7 +17,7 @@ public class ShopProductsTest extends BaseTest{
         shopProductsPage.clickEnamelledVessels();
         shopProductsPage.clickClassicBowl();
         waitForNumberOfSeconds(1);
-        shopProductsPage.clickGreenButton();
+        shopProductsPage.clickCaramelColorButton();
         shopProductsPage.clickAddToCartButton();
         waitForNumberOfSeconds(3);
         shopProductsPage.clickCloseButton();
@@ -37,12 +37,11 @@ public class ShopProductsTest extends BaseTest{
         CartPage cartPage = new CartPage(driver);
         waitForNumberOfSeconds(3);
         Assert.assertTrue(cartPage.checkIfClassicEnameledBowlIsDisplayed());
-        Assert.assertTrue(cartPage.checkIfPistachioGreenColorIsDisplayed());
+        Assert.assertTrue(cartPage.checkIfCreamCaramelColorIsDisplayed());
         Assert.assertTrue(cartPage.checkIfOnePieceIsDisplayed());
         Assert.assertTrue(cartPage.checkIfDeepEnameledBowlIsDisplayed());
         Assert.assertTrue(cartPage.checkIfOpalPinkColorIsDisplayed());
         Assert.assertTrue(cartPage.checkIfTwoPiecesIsDisplayed());
 
     }
-
 }

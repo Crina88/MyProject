@@ -1,6 +1,5 @@
 package ro.emaildesighisoara.pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,7 +11,7 @@ public class ShopProductsPage extends BasePage{
     @FindBy (className = "t-buy") private WebElement buttonShopBuy;
     @FindBy(xpath = "//div[@class='tab-content']//span") private WebElement enamelledVessels;
     @FindBy(className = "product-item-link") private WebElement classicBowl;
-    @FindBy(xpath = "//div[@class='swatch-opt']//div[@class='swatch-option color'][1]") private WebElement greenButton;
+    @FindBy(xpath = "//div[@class='swatch-opt']//div[@option-label='Crem caramel']") private WebElement caramelColorButton;
     @FindBy(xpath = "//div[@class='actions']//span") private WebElement addToCartButton;
     @FindBy(className= "mfp-close") private WebElement closeButton;
     @FindBy(xpath ="//div[@class='breadcrumbs']//a") private WebElement homePage;
@@ -26,7 +25,8 @@ public class ShopProductsPage extends BasePage{
     public void clickButtonShopBuy(){buttonShopBuy.click();}
     public void clickEnamelledVessels(){enamelledVessels.click();}
     public void clickClassicBowl(){classicBowl.click();}
-    public void clickGreenButton(){greenButton.click();}
+    public void clickCaramelColorButton(){
+        caramelColorButton.click();}
     public void clickAddToCartButton(){addToCartButton.click();}
     public void clickCloseButton(){closeButton.click();}
     public void clickHomePage(){homePage.click();}

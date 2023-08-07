@@ -25,8 +25,6 @@ public class FiltersTest extends BaseTest{
         waitForNumberOfSeconds(2);
         filtersPage.clickgreyColor();
 
-
-
         Assert.assertTrue(filtersPage.checkIfLiterEnamelSaucepanIsDisplayed());
         waitForNumberOfSeconds(2);
         Assert.assertTrue(filtersPage.checkIfGreyColorSelectIsSelected());
@@ -35,10 +33,6 @@ public class FiltersTest extends BaseTest{
         Assert.assertEquals(filtersPage.getPotCapacity(), 2, "Pot capacity is not as expected");
         Assert.assertEquals(filtersPage.getPotDiameter(),200,"Pot diameter is not as expected");
         Assert.assertEquals(filtersPage.getPotHigh(),74,"Pot high is not as expected");
-
-
-
-
 
     }
 }
